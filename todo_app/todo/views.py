@@ -21,7 +21,7 @@ def create_todo(request):
         print("running save method")
         new_todo = Todo(desc=request.POST['desc'],title=request.POST['title'])
         new_todo.save()
-        return redirect('/')
+    return redirect('/')
 
 
 def remove(request,todo_id):
